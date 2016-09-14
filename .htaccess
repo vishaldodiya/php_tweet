@@ -1,3 +1,0 @@
-AddType text/javascript .js
-AddHandler server-parsed .js
-Options Indexes FollowSymLinks Includes
