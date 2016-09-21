@@ -13,7 +13,7 @@
         //echo "<br>";
         //$tweets = $connection->get('statuses/user_timeline', ['count' => 10, 'exclude_replies' => true]);
         //print_r($tweets);
-        header("location: http://127.0.0.1/php_tweet/home.php");
+        header("location: https://vishalphptweet.herokuapp.com/home.php");
         //echo "verified";
     }else{
         echo "not verified";
