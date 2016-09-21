@@ -69,7 +69,13 @@
 
         <script>
             $(document).ready(function(){
-                $("#myCarousel").carousel({interval: 2000});
+
+                function start_coro(){
+                    console.log("jjjjjj");
+                        $("#myCarousel").carousel({interval: 2000});
+                }
+
+                
 
                 $(".image_class").on("hide.bs.collapse", function(){
                     $(".image_btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
@@ -90,6 +96,7 @@
                             $("#tweet").html(
                                 html
                             );
+                            
                             
                         }
                     });
@@ -140,8 +147,12 @@
                             <h4>Friends<span class="badge"><?php echo $profile_friends_count; ?></span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-6" id="tweet">
-                       
+                    <div class="col-sm-6">
+                       <div class='carousel slide' id='myCarousel'>
+                        <div class='carousel-inner' role='listbox' id="tweet">
+
+                        </div
+                        </div>
                     </div>
                 </div>
 
