@@ -1,24 +1,26 @@
 <?php
     session_start();
+    error_reporting(E_ALL & ~E_NOTICE);
     require 'autoload.php';
-    use Abraham\TwitterOauth\TwitterOAuth;
+    use Abraham\TwitterOAuth\TwitterOAuth;
 
-    define('CONSUMER_KEY','apnVcXUcB7XwJCSDZwyj5LSTR');
-    define('CONSUMER_SECRET','WOrDDgH5z1NpVY6RinOEU7ZjjYMq4eDlQi0qUIaivUZ7rF0sYE');
-    define('OAUTH_CALLBACK','https://vishalphptweet.herokuapp.com/callback.php');
+    $_SESSION['consumer_key'] = "apnVcXUcB7XwJCSDZwyj5LSTR";
+    $_SESSION['consumer_secret'] = "WOrDDgH5z1NpVY6RinOEU7ZjjYMq4eDlQi0qUIaivUZ7rF0sYE";
 
     if(!isset($_SESSION['access_token'])){
-        $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET);
-        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => OAUTH_CALLBACK));
+        $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret']);
+        $request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => 'http://127.0.0.1/php_tweet/callback.php'));
         $_SESSION['oauth_token'] = $request_token['oauth_token'];
         $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
         echo $url;
     }else{
         $access_token = $_SESSION['access_token'];
-        $connection = new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
+        $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
         $user = $connection->get("account/verify_credentials");
-        echo $user->status->text;
+        echo "<pre>";
+        print_r($user->status);
+        echo "</pre>";
     }
 ?>
 
@@ -36,7 +38,7 @@
             <div class="jumbotron">
                 <h1>Vishal Dodiya</h1>
                 <br>
-                <h2>RtCamp Assignment:</h2>
+                <h2>RtCamp Asssi:</h2>
                 <br>
             </div>
             <br>
