@@ -135,7 +135,7 @@
                         $rand_id = $ids->ids[$rand_no];
                         $result = $connection->get("users/lookup", array("user_id" => $rand_id));
                     ?>                            
-                                <li id="image_clk_<?php echo $i; ?>" class="image_clk" data-id="<?php echo $rand_id; ?>">
+                                <li class="image_clk" data-id="<?php echo $rand_id; ?>">
                                 <div class="well" style="max-width:95%;height:230px;">
                                     <img src="<?php if(isset($result[0]->profile_banner_url)){
                                                         echo $result[0]->profile_banner_url;
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="col-sm-9">
                                             <h3><?php echo $result[0]->screen_name; ?></h3>
-                                            <button class="btn btn-small btn-primary">Show Tweets</button>
+                                            <button class="btn btn-small btn-primary" id="image_clk_<?php echo $i; ?>">Show Tweets</button>
                                         </div>
                                         
                                     </div>
@@ -207,8 +207,6 @@
                             $("#tweet").html(
                                 html
                             );
-                            console.log("hello");
-                            $("#myCarousel").carousel({interval: 2000});
                             
                             
                         },
