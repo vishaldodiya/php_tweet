@@ -152,6 +152,7 @@
                                         <div class="col-sm-9">
                                             <h3><?php echo $result[0]->screen_name; ?></h3>
                                         </div>
+                                        <button class="btn btn-small btn-primary">Show Tweets</button>
                                     </div>
                                 </div>
                                 </li>
