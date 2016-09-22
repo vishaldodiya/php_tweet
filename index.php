@@ -15,12 +15,7 @@
         $url = $connection->url('oauth/authorize', array('oauth_token' => $request_token['oauth_token']));
         echo $url;
     }else{
-        $access_token = $_SESSION['access_token'];
-        $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
-        $user = $connection->get("account/verify_credentials");
-        echo "<pre>";
-        print_r($user->status);
-        echo "</pre>";
+        header("Location: https://vishalphptweet.herokuapp.com/home.php");
     }
 ?>
 

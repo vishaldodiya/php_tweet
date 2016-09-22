@@ -30,6 +30,9 @@
             $ids = $connection->get("followers/ids", array("screen_name" => $profile_screen_name, "cursor" => $cursor));
             $cursor = $ids->next_cursor;
         }
+        else{
+            header("Location: https://vishalphptweet.herokuapp.com");
+        }
         
         /*
         $result = $connection->get("users/lookup", array("user_id" => "426219612"));
