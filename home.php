@@ -67,43 +67,7 @@
         <script type="text/javascript" src="jcarousel.responsive.js"></script>
         <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
 
-        <script>
-            $(document).ready(function(){
-
-                
-             
-                    
-                
-                  function start(){
-                      alert("thase");
-                     $("#tweet").html(html);
-                     
-                      $("#myCarousel").carousel({interval: 2000});
-                  }      
-                
-
-                
-
-                $(".image_class").on("hide.bs.collapse", function(){
-                    $(".image_btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
-                });
-                $(".image_class").on("show.bs.collapse", function(){
-                    $(".image_btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
-                });
-
-               $(".image_clk").click(function(){
-                   var u_id = $(this).data('id');
-                   $.ajax({
-                        url:"tweet_php.php",
-                        method:"GET",
-                        data:{user_id:u_id},
-                        success:start
-                    });
-               });
-
-                
-            });
-        </script>
+       
 
         <style>
             
@@ -213,6 +177,49 @@
     </body>
 </html>
 
+
+ <script>
+            
+
+                
+             
+                    $("#myCarousel").carousel({interval: 2000});
+                
+                        
+                
+
+                
+
+                $(".image_class").on("hide.bs.collapse", function(){
+                    $(".image_btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+                });
+                $(".image_class").on("show.bs.collapse", function(){
+                    $(".image_btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+                });
+
+               $(".image_clk").click(function(){
+                   var u_id = $(this).data('id');
+                   $.ajax({
+                        url:"tweet_php.php",
+                        method:"GET",
+                        data:{user_id:u_id},
+                        success:function(html){
+                            //document.write(html.id);
+                            consddddole.log('hmm');
+                            $("#tweet").html(
+                                html
+                            );
+                            
+                            
+                            
+                        },
+
+                    });
+               });
+
+                
+            
+        </script>
 
 
 
