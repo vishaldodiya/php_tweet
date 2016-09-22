@@ -24,7 +24,7 @@
 
                         for($i=0;$i<$count;$i++){ 
                         
-                        echo "<div class='well item'>"; 
+                        echo "<div class='well item active'>"; 
                         
                         echo "<table class='table' style='border:0'>
                                     <tbody>
