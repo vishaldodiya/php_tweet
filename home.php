@@ -99,7 +99,7 @@
                             $("#tweet").html(
                                 html
                             );
-                            
+                            start();
                             
                         }
                     });
