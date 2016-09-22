@@ -19,13 +19,15 @@
                     $tweets = $connection->get('statuses/user_timeline', ['count' => $count, 'exclude_replies' => true]);
                 }
 
+                
+
                 require('fpdf.php');
                     $pdf = new FPDF('P','mm','A4');
                     $pdf->AddPage();
                     $pdf->SetFont('Arial','B',16);
                     $pdf->SetX(40);
                     $pdf->SetY(0);
-                    $pdf->Cell(0,80, $tweets->user->name ."'s latest 10 tweets" );
+                    $pdf->Cell(0,80, "users latest 10 tweets" );
                     $pdf->SetFont('Times','',13);
 
                     $y = 25;

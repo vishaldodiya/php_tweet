@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6" >
-                    <a id="a_pdf" href="https://vishalphptweet.herokuapp.com/generate_pdf.php?u_id=''" target="_blank"><button class="btn btn-default">Download</button></a>
+                    <a id="a_pdf" href="https://vishalphptweet.herokuapp.com/generate_pdf.php?u_id=''" target="_blank"><button class="btn btn-default">Download Tweet</button></a>
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
                              <div class="carousel slide" id="myCarousel">
