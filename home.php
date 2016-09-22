@@ -95,11 +95,11 @@
                         data:{user_id:u_id},
                         success:function(html){
                             //document.write(html.id);
-                            
+                            console.log("kem");
                             $("#tweet").html(
                                 html
                             );
-                            console.log("kem");
+                            
                             start();
                             
                         }
