@@ -70,10 +70,9 @@
         <script>
             $(document).ready(function(){
 
-                function start_coro(){
-                    console.log("jjjjjj");
-                        $("#myCarousel").carousel({interval: 2000});
-                }
+                
+                        //$("#myCarousel").carousel({interval: 2000});
+                
 
                 
 
@@ -92,7 +91,7 @@
                         data:{user_id:u_id},
                         success:function(html){
                             //document.write(html.id);
-                            
+                            $("#myCarousel").carousel({interval: 2000});
                             $("#tweet").html(
                                 html
                             );
@@ -151,7 +150,7 @@
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
 
-                        </div
+                        </div>
                         </div>
                     </div>
                 </div>
