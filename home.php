@@ -99,6 +99,7 @@
                             $("#tweet").html(
                                 html
                             );
+                            console.log("kem");
                             start();
                             
                         }
