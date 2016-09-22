@@ -66,7 +66,7 @@
         
         
     }else{
-        echo "jhkj";
+        echo "page not found";
     }
     }
     
