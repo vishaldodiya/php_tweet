@@ -25,7 +25,7 @@
                     $pdf->SetFont('Arial','B',16);
                     $pdf->SetX(40);
                     $pdf->SetY(0);
-                    $pdf->Cell(0,80, $user->name ."'s latest 10 tweets" );
+                    $pdf->Cell(0,80, $tweets->user->name ."'s latest 10 tweets" );
                     $pdf->SetFont('Times','',13);
 
                     $y = 25;
