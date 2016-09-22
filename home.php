@@ -75,8 +75,9 @@
                     
                 
                   function start(){
+                      alert("thase");
                      $("#tweet").html(html);
-                     alert("thase");
+                     
                       $("#myCarousel").carousel({interval: 2000});
                   }      
                 
