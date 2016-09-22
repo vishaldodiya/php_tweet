@@ -102,6 +102,10 @@
                             
                             
                         }
+                        complete: function(html){
+                            console.log("hmm");
+                            $("#myCarousel").carousel({interval: 2000});
+                        }
                     });
                });
 
