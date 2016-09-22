@@ -183,13 +183,8 @@
 
                 
              
-                    $("#myCarousel").carousel({interval: 2000});
                 
-                        
                 
-
-                
-
                 $(".image_class").on("hide.bs.collapse", function(){
                     $(".image_btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
                 });
@@ -198,6 +193,7 @@
                 });
 
                $(".image_clk").click(function(){
+                   $("#myCarousel").carousel({interval: 2000});
                    var u_id = $(this).data('id');
                    $.ajax({
                         url:"tweet_php.php",
@@ -205,7 +201,7 @@
                         data:{user_id:u_id},
                         success:function(html){
                             //document.write(html.id);
-                            consddddole.log('hmm');
+                            
                             $("#tweet").html(
                                 html
                             );
@@ -217,6 +213,8 @@
                     });
                });
 
+
+               $("#myCarousel").carousel({interval: 2000});
                 
             
         </script>
