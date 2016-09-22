@@ -71,7 +71,11 @@
             $(document).ready(function(){
 
                 
-                        //$("#myCarousel").carousel({interval: 2000});
+                function start(){
+                    console.log("hmm");
+                    $("#myCarousel").carousel({interval: 2000});
+                }
+                        
                 
 
                 
@@ -91,7 +95,7 @@
                         data:{user_id:u_id},
                         success:function(html){
                             //document.write(html.id);
-                            $("#myCarousel").carousel({interval: 2000});
+                            
                             $("#tweet").html(
                                 html
                             );
