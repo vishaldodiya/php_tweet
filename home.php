@@ -151,10 +151,10 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                       <div class='carousel slide' id='myCarousel'>
-                        <div class='carousel-inner' role='listbox' id="tweet">
+                       <div class='carousel slide' id='myCarousel' id="tweet">
+                        
 
-                        </div>
+                        
                         </div>
                     </div>
                 </div>
