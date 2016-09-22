@@ -75,10 +75,8 @@
                     
                 
                   function start(){
-                     $("#tweet").html(
-                                html
-                            );
-
+                     $("#tweet").html(html);
+                     console.log("hmm");
                       $("#myCarousel").carousel({interval: 2000});
                   }      
                 
