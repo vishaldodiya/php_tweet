@@ -117,7 +117,7 @@
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
 
-                            <?php include 'tweet_php.php'; ?>
+                            
                         
                         </div>
                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
