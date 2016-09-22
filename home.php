@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6" >
-                    <a href="generate_pdf.php"><button class="btn btn-default">Download</button></a>
+                    <a id="a_pdf" target="_blank"><button class="btn btn-default">Download</button></a>
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
                              <div class="carousel slide" id="myCarousel">
@@ -252,8 +252,11 @@
                 });
 
                $(".image_clk").click(function(){
+
                    $("#myCarousel").carousel({interval: 2000});
                    var u_id = $(this).data('id');
+                   $("#a_pdf").attr("href", "https://vishalphptweet.herokuapp.com/generate_pdf.php?u_id="+u_id);
+
                    $.ajax({
                         url:"tweet_php.php",
                         method:"GET",
