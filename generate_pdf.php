@@ -5,7 +5,7 @@
     session_start();
 
         $count = 10;
-
+        echo $_GET['u_id'];
         if(isset($_SESSION['access_token'])){
 
                 $access_token = $_SESSION['access_token'];
@@ -15,8 +15,6 @@
                 if(isset($_GET['u_id'])){
                      $tweets = $connection->get('statuses/user_timeline', ['count' => $count , 'user_id' => $_GET['u_id'], 'exclude_replies' => true]);
 
-
-                    
                 }else{
                     $tweets = $connection->get('statuses/user_timeline', ['count' => $count, 'exclude_replies' => true]);
                 }
