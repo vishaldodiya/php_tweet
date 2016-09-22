@@ -106,6 +106,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6" >
+                    <a href="generate_pdf.php"><button class="btn btn-default">Download</button></a>
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
                              <div class="carousel slide" id="myCarousel">
