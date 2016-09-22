@@ -207,7 +207,8 @@
                             $("#tweet").html(
                                 html
                             );
-                            
+                            console.log("hello");
+                            $("#myCarousel").carousel({interval: 2000});
                             
                             
                         },
