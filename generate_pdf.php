@@ -5,14 +5,14 @@
     session_start();
 
         $count = 10;
-        echo $_GET['u_id'];
+        //echo $_GET['u_id'];
         if(isset($_SESSION['access_token'])){
 
                 $access_token = $_SESSION['access_token'];
                 $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
                 $user = $connection->get("account/verify_credentials");
 
-                if(isset($_GET['u_id'])){
+                if(!empty($_GET['u_id'])){
                      $tweets = $connection->get('statuses/user_timeline', ['count' => $count , 'user_id' => $_GET['u_id'], 'exclude_replies' => true]);
 
                 }else{
