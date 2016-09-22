@@ -21,8 +21,10 @@
         
         //print_r($tweets[0]);
                 echo "
-                <div class='carousel slide' id='myCarousel' >
-                <div class='carousel-inner' role='listbox' >";
+                <div class='carousel slide' id='myCarousel'>
+                <div class='carousel-inner' role='listbox'>
+                ";
+
                         for($i=0;$i<$count;$i++){ 
                         
                         echo "<div class='well item"; echo ($i == 0) ? ' active' : '';
