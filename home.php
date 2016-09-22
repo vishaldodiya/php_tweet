@@ -30,9 +30,7 @@
             $ids = $connection->get("followers/ids", array("screen_name" => $profile_screen_name, "cursor" => $cursor));
             $cursor = $ids->next_cursor;
         }
-        else{
-            header("Location: https://vishalphptweet.herokuapp.com");
-        }
+       
         
         /*
         $result = $connection->get("users/lookup", array("user_id" => "426219612"));
@@ -56,7 +54,9 @@
             print_r($tweets);
        echo "</pre>";
        */
-    }
+    } else{
+            header("Location: https://vishalphptweet.herokuapp.com");
+        }
         
 ?>
 
@@ -117,7 +117,7 @@
                        <div class='carousel slide' id='myCarousel'>
                         <div class='carousel-inner' role='listbox' id="tweet">
 
-
+                            <?php include 'tweet_php.php'; ?>
                         
                         </div>
                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
