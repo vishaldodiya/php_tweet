@@ -94,7 +94,7 @@
                         data:{user_id:u_id},
                         success:function(html){
                             //document.write(html.id);
-                            
+                            consddddole.log("hmm");
                             $("#tweet").html(
                                 html
                             );
