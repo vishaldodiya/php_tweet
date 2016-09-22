@@ -152,10 +152,7 @@
                     </div>
                     <div class="col-sm-6" id="tweet">
                        
-                        
-
-                        
-                        
+                
                     </div>
                 </div>
 
