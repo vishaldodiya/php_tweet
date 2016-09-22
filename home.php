@@ -150,9 +150,23 @@
                             <h4>Friends<span class="badge"><?php echo $profile_friends_count; ?></span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-6" id="tweet">
-                       
-                
+                    <div class="col-sm-6" >
+                       <div class='carousel slide' id='myCarousel'>
+                        <div class='carousel-inner' role='listbox' id="tweet">
+
+
+                        </div> 
+
+                        <a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
+                                <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+                                <span class='sr-only'>Previous</span>
+                            </a>
+                            <a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'>
+                                <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                                <span class='sr-only'>Next</span>
+                            </a>
+
+                      </div>   
                     </div>
                 </div>
 
