@@ -150,12 +150,12 @@
                             <h4>Friends<span class="badge"><?php echo $profile_friends_count; ?></span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                       <div class='carousel slide' id='myCarousel' id="tweet">
+                    <div class="col-sm-6" id="tweet">
+                       
                         
 
                         
-                        </div>
+                        
                     </div>
                 </div>
 

@@ -20,7 +20,9 @@
         
         
         //print_r($tweets[0]);
-                echo "<div class='carousel-inner' role='listbox' >";
+                echo "
+                <div class='carousel slide' id='myCarousel' >
+                <div class='carousel-inner' role='listbox' >";
                         for($i=0;$i<$count;$i++){ 
                         
                         echo "<div class='well item"; echo ($i == 0) ? ' active' : '';
@@ -68,7 +70,8 @@
                                 <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                                 <span class='sr-only'>Next</span>
                             </a>
-                        </div>    
+                        </div> 
+                      </div>     
                         ";
                         
                 
