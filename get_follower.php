@@ -9,10 +9,12 @@
             $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
             $count = 5000;
             $cursor = -1;
-            $follow_array = array();
+            $follow_array;
             while($cursor != 0){
+                
+                $follow_array = json_encode($followers,true);
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
-                $follow_array.push($followers);
+                $follow_array = array_merge($data, $followers);
                 $cursor = $followers->next_cursor;
             }
             
