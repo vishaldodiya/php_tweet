@@ -67,8 +67,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
-        <script type="text/javascript" src="jcarousel.responsive.js"></script>
-        <link rel="stylesheet" type="text/css" href="jcarousel.responsive.css">
+        <script type="text/javascript" src="css/jcarousel.responsive.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/jcarousel.responsive.css">
 
        
 
@@ -200,7 +200,7 @@
                                                         echo $result[0]->profile_banner_url;
                                                          
                                                     }else{
-                                                      echo "default.JPG";  
+                                                      echo "images/default.JPG";  
                                                     }                                                          
                                                         
                                                 ?>" class="img-rounded"  style="width:100%;height:100">
