@@ -67,8 +67,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
-        <script type="text/javascript" src="css/jcarousel.responsive.js"></script>
-        <link rel="stylesheet" type="text/css" href="js/jcarousel.responsive.css">
+        <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
 
        
 
