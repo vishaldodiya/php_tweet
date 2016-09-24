@@ -9,7 +9,7 @@
             $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
             $count = 100;
 
-            $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi'));
+            $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => '-1'));
 
             echo "<pre>";
             print_r($followers);
