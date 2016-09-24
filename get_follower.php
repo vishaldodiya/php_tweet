@@ -12,9 +12,10 @@
             $follow_array;
             while($cursor != 0){
                 
-                $follow_array = json_encode($followers,true);
+                
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
-                $follow_array = array_merge($data, $followers);
+                $follow_array = json_encode($followers,true);
+                $follow_array = array_merge($follow_array, $followers);
                 $cursor = $followers->next_cursor;
             }
             
