@@ -20,7 +20,7 @@
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
                 //$follow_array = array_merge($follow_array, $follow_array);
-                $cursor = $followers->next_cursor_str;
+                $cursor = $followers->next_cursor;
             }
             
 
