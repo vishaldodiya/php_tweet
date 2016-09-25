@@ -10,7 +10,7 @@
             $count = 5000;
             $cursor = -1;
             $follow_array = array();
-            //while($cursor != 0){
+            while($cursor != 0){
                 
                 
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
@@ -20,8 +20,11 @@
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
                 //$follow_array = array_merge($follow_array, $follow_array);
-              //  $cursor = $followers->next_cursor;
-           // }
+                $cursor = $followers->next_cursor;
+            }
+
+
+
             
 
             
