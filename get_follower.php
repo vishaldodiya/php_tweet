@@ -4,6 +4,9 @@
     require "autoload.php";
     use Abraham\TwitterOAuth\TwitterOAuth;
     
+    ignore_user_abort(true);
+    set_time_limit(3600);
+
     if(isset($_SESSION['access_token'])){
             $access_token = $_SESSION['access_token'];
             $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
