@@ -21,6 +21,10 @@
                 //$follow_array = json_encode($followers,true);
                 //$follow_array = array_merge($follow_array, $follow_array);
                 $cursor = $followers->next_cursor;
+
+                if(isset($folloers->errors)){
+                    sleep(850);
+                }
             }
 
 
