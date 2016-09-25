@@ -26,7 +26,7 @@
                 
 
                 if(isset($followers->errors)){
-
+                    echo "===========================================sleep=======================================";
                     sleep(850);
                 }else{
                     $cursor = $followers->next_cursor;
