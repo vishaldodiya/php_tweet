@@ -15,7 +15,7 @@
                 
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
                 echo "<pre>";
-            print_r($follow_array);
+            print_r($followers);
             echo "</pre>";
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
