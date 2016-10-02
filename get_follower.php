@@ -15,7 +15,7 @@
             $follow_array = array();
             while($cursor != 0){
                 
-                
+                echo "================================================================";
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
                 echo "<pre>";
             print_r($followers);
