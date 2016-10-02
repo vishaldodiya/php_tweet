@@ -20,6 +20,8 @@
                 echo "<pre>";
             print_r($followers);
             echo "</pre>";
+                sleep(10);
+                echo "======================================================";
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
                 //$follow_array = array_merge($follow_array, $follow_array);
