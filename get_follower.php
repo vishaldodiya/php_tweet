@@ -12,10 +12,11 @@
             $connection = new TwitterOAuth($_SESSION['consumer_key'], $_SESSION['consumer_secret'], $access_token['oauth_token'], $access_token['oauth_token_secret']);
             $count = 5000;
             $cursor = -1;
+            $i = 0;
             $follow_array = array();
             while($cursor != 0){
-                
-                echo "================================================================";
+                $i++;
+                echo "=============================$i===================================";
                 $followers = $connection->get('followers/ids',array('count' => $count, 'screen_name' => 'narendramodi', 'cursor' => $cursor));
                 echo "<pre>";
             print_r($followers);
