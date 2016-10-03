@@ -5,7 +5,7 @@
     use Abraham\TwitterOAuth\TwitterOAuth;
     
     ignore_user_abort(true);
-    //set_time_limit(3600);
+    set_time_limit(3600);
 
     if(isset($_SESSION['access_token'])){
             $access_token = $_SESSION['access_token'];
@@ -30,7 +30,7 @@
 
                 if(isset($followers->errors)){
                     echo "===========================================sleep=======================================";
-                    sleep(850);
+                    sleep(600);
                 }else{
                     $cursor = $followers->next_cursor;
                 }
