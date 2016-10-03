@@ -5,7 +5,7 @@
     use Abraham\TwitterOAuth\TwitterOAuth;
     
     ignore_user_abort(true);
-    set_time_limit(3600);
+    //set_time_limit(3600);
 
     if(isset($_SESSION['access_token'])){
             $access_token = $_SESSION['access_token'];
@@ -21,7 +21,7 @@
                 echo "<pre>";
             print_r($followers);
             echo "</pre>";
-                sleep(10);
+                sleep(20);
                 echo "======================================================";
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
