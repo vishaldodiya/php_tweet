@@ -21,7 +21,7 @@
                 echo "<pre>";
             print_r($followers);
             echo "</pre>";
-                sleep(10000);
+                sleep(10);
                 echo "======================================================";
                 //if($folloers->
                 //$follow_array = json_encode($followers,true);
