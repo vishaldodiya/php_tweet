@@ -33,7 +33,7 @@
             <div class="jumbotron">
                 <h1>Vishal Dodiya</h1>
                 <br>
-                <h2>RtCamp Asssi:</h2>
+                <h2>Asssi:</h2>
                 <br>
             </div>
             <br>
